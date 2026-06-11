@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Section background */
+.contact-section {
+  background-color: #e6d3bb;
+  padding: 60px 20px;
+}
+
+/* Top text */
+.top-text {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #5a6470;
+}
+
+/* Main box */
+.contact-box {
+  max-width: 1000px;
+  margin: auto;
+  background: #f2f2f2;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Left side */
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h2 {
+  margin-bottom: 10px;
+}
+
+.contact-left hr {
+  margin-bottom: 20px;
+}
+
+/* Info blocks */
+.info {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sub {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Right side (map) */
+.contact-right {
+  flex: 1;
+}
+
+.contact-right iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-right iframe {
+    height: 250px;
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="contact">
+        <h6>You can meet us here or give us a call.</h6>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h4><strong>Contact Information</strong></h4>
+            </div>
+        </div>
+    </div> -->
+    <div class="contact-section">
+
+  <p class="top-text">You can meet us here or give us a call.</p>
+
+  <div class="contact-box">
+
+    <!-- Left Side -->
+    <div class="contact-left">
+      <h2>Contact Information</h2>
+      <hr>
+
+      <div class="info">
+        <p class="label">📍 Shuddh Swad</p>
+        <p class="sub">ichalkarnji<br>
+        kolhapur,416143, India.</p>
+      </div>
+
+      <div class="info">
+        <p class="label">📞 Phone</p>
+        <p class="sub">+91 8016380734</p>
+      </div>
+
+      <div class="info">
+        <p class="label">✉️ Email</p>
+        <p class="sub">contact@shuddhswad.shop</p>
+      </div>
+    </div>
+
+    <!-- Right Side (Map) -->
+    <div class="contact-right">
+      <iframe 
+  src="https://maps.google.com/maps?q=Ichalkaranji%20Maharashtra&t=&z=13&ie=UTF8&iwloc=&output=embed"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

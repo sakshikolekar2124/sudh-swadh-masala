@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuddh Swad</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="style_swadh.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+     <!-- <div id="header"> -->
+    <div class="navbar">
+
+       
+        <!-- <div class="nav-left">
+           
+             <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search products...">
+           </div>
+
+             <i class="fas fa-search" onclick="toggleSearch()"></i>
+        </div> -->
+       <div class="nav-left">
+  <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search products..." id="searchInput">
+  </div>
+
+  <i class="fas fa-search" onclick="toggleSearch()"></i>
+</div>
+
+       
+        <div class="nav-center">
+            <img src="./images/swadh_logo.avif">
+        </div>
+
+        <div class="nav-right">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-bag-shopping"></i>
+        </div>
+
+    </div>
+    <div class="big-search" id="bigSearch">
+  <input type="text" placeholder="Search" id="bigInput">
+  
+  <i class="fas fa-search"></i>
+  <i class="fas fa-times" onclick="closeBigSearch()"></i>
+</div>
+    <!-- </div> -->
+
+    <!-- three dots -->
+     <!-- 3 dot icon -->
+<i class="fas fa-ellipsis-v" onclick="openMenu()"></i>
+
+<!-- Side Menu -->
+ <div id="sideMenu" class="side-menu">
+    <span class="close-btn" onclick="closeMenu()">&times;</span>
+
+    <a href="index.html">Home</a>
+   <!-- <a href="#">Orders</a> -->
+    <!-- <a href="#">Track your order</a> -->
+     <a href="products.html">Products</a>
+    <a href="return_policy.html">Return Policy</a>
+    <a href="about_us.html">About us</a>
+    <a href="contact_us.html">Contact us</a>
+    <!-- <a href="shipping_policy.html">Shipping Policy</a> -->
+     <a href="shipping_policy.html">Shipping Policy</a>
+    <!-- <a href="#">Terms of Service</a>  -->
+</div>
+
+    <!-- Shipping Bar -->
+  <div class="shipping-bar">
+    <div class="slide-text" id="slideText"></div>
+</div>
+
+<!-- banner -->
+ <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="./images/masala1.jpg" class="d-block w-100 hero-img">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="./images/masala2.jpg" class="d-block w-100 hero-img">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="./images/masala3.jpg" class="d-block w-100 hero-img">
+        </div>
+
+    </div>
+
+  
+</div>
+
+<!-- products -->
+ <div class="products">
+     <h1><b>OUR PRODUCTS</b></h1>
+     <h5 style="color:black">A heritage of flavor in every bite.</h5>
+
+
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+      <img src="./images/swad1.webp" class="swad">
+    </div>
+    <div class="col-md-4">
+      <img src="./images/swad2.webp" class="swad">
+    </div>
+    <div class="col-md-4">
+      <img src="./images/swad3.webp" class="swad">
+    </div>
+
+      <div class="col-md-12">
+        <img src="./images/sab_chahiye.webp" class="swad">
+    </div>
+        
+    </div>
+ </div>
+
+ <!-- next img -->
+  <div class="what">
+    <div class="row">
+     <div class="col-md-6">
+      <img src="./images/what_thekua.webp" height="400px" width="400px">
+    </div>
+    <div class="col-md-6">
+      <h1 id="space">WHAT IS THEKUA?</h1>
+      <p>Thekua is an Indian dessert that is traditionally made at home using simple ingredients. It is prepared using whole wheat flour, jaggery, and clarified butter and then shaped by hand. Afterward, the preparation is deep fried until it acquires a golden brown hue and crispy texture.
+           Typically made during religious festivities such as Chhath Puja, Thekua is considered an important item in each household.
+            Besides being a delicacy, the dish has deep cultural significance as it is believed to be a mark of devotion for the devotee. Thekua has a distinct flavor and aroma owing to the presence of jaggery.
+            Additionally, it has subtle flavors of coconut and cardamom.
+            One of the notable aspects of Thekua is that it is handmade.
+             Thus, each piece bears a distinctive design.</p>
+             
+    </div>
+    
+    </div>
+   
+    </div>
+
+<!-- why -->
+<div class="why">
+<img src="./images/why.webp" class="why">
+</div>
+
+<!-- p -->
+<div class="p">
+    <h2><b>AVAILABLE ACROSS INDIA</b></h2>
+    <p>Trusted marketplaces where you can buy Shudh Swad</p>
+</div>
+
+<!-- shopping logo -->
+<div class="shop">
+  <div class="row">
+
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6 animate-logo">
+      <img src="./images/shop5.webp" class="shop1">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6 animate-logo">
+      <img src="./images/shop1.webp" class="shop1">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6 animate-logo">
+      <img src="./images/shop2.webp" class="shop1">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6 animate-logo">
+      <img src="./images/shop3.webp" class="shop1">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6 animate-logo">
+      <img src="./images/shop4.webp" class="shop1">
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6 animate-logo">
+      <img src="./images/shop5.webp" class="shop1">
+    </div>
+
+  </div>
+</div>
+
+ <!-- feartured in -->
+  <div class="feartured">
+    <h4 class="style">Featured In</h4>
+    <div class="press">
+    <img src="./images/logo1.svg" class="logo">
+    <img src="./images/logo2.png" class="logo">
+    <img src="./images/logo3.webp" class="logo">
+    <img src="./images/logo4.png" class="logo">
+    <img src="./images/logo5.png" class="logo">
+    <img src="./images/logo7.png" class="logo">
+    <img src="./images/logo8.png" class="logo">
+    <img src="./images/logo9.webp" class="logo">
+
+    <!-- duplicate -->
+      <img src="./images/logo1.svg" class="logo">
+    <img src="./images/logo2.png" class="logo">
+    <img src="./images/logo3.webp" class="logo">
+    <img src="./images/logo4.png" class="logo">
+    <img src="./images/logo5.png" class="logo">
+    <img src="./images/logo7.png" class="logo">
+    <img src="./images/logo8.png" class="logo">
+    <img src="./images/logo9.webp" class="logo">
+</div>
+<img src="./images/ai.webp" class="ai">
+  </div>
+
+<!-- footer -->
+<!-- <div id="footer"> -->
+   <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h2>Shuddh Swad</h2>
+      <p>Pure · Authentic · Traditional</p>
+      <p>Authentic, pure snacks & products delivered to your doorstep.</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Track Order</li>
+        <li>Return and Refund</li>
+        <li>FAQ</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Company</h3>
+      <ul>
+        <li>Our Story</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Get In Touch</h3>
+      <p>Adra, West Bengal, India</p>
+      <p>+91 8016380734</p>
+      <p>Mon–Fri, 10am–6:30pm</p>
+    </div>
+
+   
+
+  </div><br><br>
+  <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+  
+  <div class="social">
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+
+  <div class="para">
+    <p class="right_p">© 2025 Shuddh Swad. All Rights Reserved.</p>
+  </div>
+
+</div>
+</footer>
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const messages = [
+        "Free Shipping on Prepaid Orders",
+        "Get 10% Off on First Order",
+        "Cash on Delivery Available",
+        "Fast Delivery in 3-5 Days"
+    ];
+
+    let index = 0;
+    const text = document.getElementById("slideText");
+
+    // initial text
+    text.innerText = messages[0];
+
+    function changeMessage() {
+
+        // slide out left
+        text.style.transform = "translateX(-100px)";
+        text.style.opacity = "0";
+
+        setTimeout(() => {
+            index = (index + 1) % messages.length;
+            text.innerText = messages[index];
+
+            // reset right side
+            text.style.transform = "translateX(100px)";
+
+            setTimeout(() => {
+                text.style.transform = "translateX(0)";
+                text.style.opacity = "1";
+            }, 50);
+
+        }, 300);
+    }
+
+    setInterval(changeMessage, 6000);
+
+ 
+    
+    function openMenu() {
+  document.getElementById("sideMenu").style.left = "0";
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").style.left = "-250px";
+}
+
+// footer
+// fetch("header.html")
+//   .then(res => res.text())
+//   .then(data => document.getElementById("header").innerHTML = data);
+
+// fetch("footer.html")
+//   .then(res => res.text())
+//   .then(data => document.getElementById("footer").innerHTML = data);
+    
+
+
+// search button
+function toggleSearch() {
+  let box = document.querySelector(".search-box");
+  box.classList.toggle("active");
+
+  if (box.classList.contains("active")) {
+    document.getElementById("searchInput").focus();
+  }
+}
+
+function openBigSearch() {
+  document.getElementById("bigSearch").classList.add("active");
+  document.getElementById("bigInput").focus();
+}
+
+function closeBigSearch() {
+  document.getElementById("bigSearch").classList.remove("active");
+}
+</script>
+
+
+</body>
+</html>
